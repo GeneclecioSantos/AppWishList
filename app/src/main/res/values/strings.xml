@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppHeroePHPMySQL</string>
+    <array name="teams">
+        <item>Mercado</item>
+        <item>Farmácia</item>
+        <item>Pet Shop</item>
+        <item>Shopping</item>
+    </array>
+</resources>
