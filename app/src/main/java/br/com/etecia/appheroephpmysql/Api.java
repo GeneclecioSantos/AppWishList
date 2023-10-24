@@ -1,7 +1,7 @@
 package br.com.etecia.appheroephpmysql;
 
 public class Api {
-    private static final String ROOT_URL = "http://10.67.96.159/HeroeAPI-main/v1/Api.php?apicall=";
+    private static final String ROOT_URL = "http://10.67.96.57/WishListAPI/v1/Api.php?apicall=";
 
 
     public static final String URL_CREATE_HERO = ROOT_URL + "createhero";

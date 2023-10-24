@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppHeroePHPMySQL</string>
+    <string name="app_name">Wish List</string>
     <array name="teams">
         <item>Mercado</item>
         <item>Farmácia</item>
