@@ -57,12 +57,29 @@ public class MainActivity extends AppCompatActivity {
 
         buttonAddUpdate = findViewById(R.id.buttonAddUpdate);
 
+        View buttonMenu = findViewById(R.id.buttonMenu);
+
         progressBar = findViewById(R.id.progressBar);
 
         listView = findViewById(R.id.listViewHeroes);
 
         heroList = new ArrayList<>();
+
+
         buttonAddUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (isUpdating) {
+                    updateHero();
+                } else {
+                    createHero();
+                }
+
+            }
+        });
+
+        buttonMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
