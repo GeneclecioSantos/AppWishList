@@ -13,6 +13,10 @@ public class Page2 extends AppCompatActivity {
     Button buttonBack;
     ImageView imgMercado;
 
+    ImageView imgFarmacia;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +24,7 @@ public class Page2 extends AppCompatActivity {
 
         buttonBack = findViewById(R.id.buttonBack);
         imgMercado = findViewById(R.id.imgMercado);
+        imgFarmacia =findViewById(R.id.imgFarmacia);
 
         imgMercado.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +43,14 @@ public class Page2 extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+        imgFarmacia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), farmacia.class);
+                startActivity(intent);
             }
         });
 

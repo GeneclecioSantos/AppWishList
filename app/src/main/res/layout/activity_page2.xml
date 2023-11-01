@@ -75,6 +75,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/imgFarmacia"
                             android:layout_width="150dp"
                             android:layout_height="150dp"
                             android:layout_gravity="center"
