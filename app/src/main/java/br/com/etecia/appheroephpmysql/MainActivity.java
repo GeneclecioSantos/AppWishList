@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -83,11 +84,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (isUpdating) {
-                    updateHero();
-                } else {
-                    createHero();
-                }
+                Intent intent = new Intent(getApplicationContext(), Page2.class);
+                startActivity(intent);
 
             }
         });

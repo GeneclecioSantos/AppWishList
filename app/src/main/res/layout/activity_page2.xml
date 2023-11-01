@@ -178,6 +178,12 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Voltar" />
+
         </LinearLayout>
 
     </ScrollView>
