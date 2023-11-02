@@ -17,6 +17,7 @@ public class Page2 extends AppCompatActivity {
 
     ImageView imgPetShop;
 
+    ImageView imgShopping;
 
 
     @Override
@@ -28,6 +29,7 @@ public class Page2 extends AppCompatActivity {
         imgMercado = findViewById(R.id.imgMercado);
         imgFarmacia =findViewById(R.id.imgFarmacia);
         imgPetShop = findViewById(R.id.imgPetShop);
+        imgShopping =findViewById(R.id.imgShopping);
 
         imgMercado.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +69,14 @@ public class Page2 extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), petshop.class);
                 startActivity(intent);
 
+            }
+        });
+
+        imgShopping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), shopping.class);
+                startActivity(intent);
             }
         });
 
